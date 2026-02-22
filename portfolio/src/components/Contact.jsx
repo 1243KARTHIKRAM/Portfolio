@@ -39,18 +39,21 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           {/* Contact Info Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
-            <div className="flex items-center space-x-3 bg-slate-700/50 p-4 rounded-lg border border-slate-600 hover:border-cyan-400/50 hover:bg-slate-700 transition-all duration-300 group">
+            <a 
+              href="mailto:1243gkarthikram@gmail.com" 
+              className="flex items-center space-x-3 bg-slate-700/50 p-4 rounded-lg border border-slate-600 hover:border-cyan-400/50 hover:bg-slate-700 transition-all duration-300 group"
+            >
               <div className="p-3 bg-slate-600/50 rounded-full group-hover:bg-cyan-500/20 transition-colors duration-300">
-                <Mail className="w-5 h-5 text-cyan-400" />
+                <Mail className="w-5 h-5 text-cyan-400 group-hover:text-cyan-300 transition-colors duration-300" />
               </div>
-              <div>
+              <div className="min-w-0 flex-1">
                 <p className="text-slate-400 text-xs">Email</p>
-                <p className="text-white text-sm font-medium">karthikram@example.com</p>
+                <p className="text-white text-sm font-medium break-all">Email.com</p>
               </div>
-            </div>
+            </a>
             
             <a 
-              href="https://github.com" 
+              href="https://github.com/1243KARTHIKRAM" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center space-x-3 bg-slate-700/50 p-4 rounded-lg border border-slate-600 hover:border-cyan-400/50 hover:bg-slate-700 transition-all duration-300 group"
@@ -58,14 +61,14 @@ const Contact = () => {
               <div className="p-3 bg-slate-600/50 rounded-full group-hover:bg-cyan-500/20 transition-colors duration-300">
                 <Github className="w-5 h-5 text-cyan-400 group-hover:text-cyan-300 transition-colors duration-300" />
               </div>
-              <div>
+              <div className="min-w-0 flex-1 overflow-hidden">
                 <p className="text-slate-400 text-xs">GitHub</p>
-                <p className="text-white text-sm font-medium">github.com/karthik</p>
+                <p className="text-white text-sm font-medium break-all whitespace-normal">github.com</p>
               </div>
             </a>
             
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/g-karthik-ram-b92630260/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center space-x-3 bg-slate-700/50 p-4 rounded-lg border border-slate-600 hover:border-cyan-400/50 hover:bg-slate-700 transition-all duration-300 group"
@@ -73,9 +76,9 @@ const Contact = () => {
               <div className="p-3 bg-slate-600/50 rounded-full group-hover:bg-cyan-500/20 transition-colors duration-300">
                 <Linkedin className="w-5 h-5 text-cyan-400 group-hover:text-cyan-300 transition-colors duration-300" />
               </div>
-              <div>
+              <div className="min-w-0 flex-1 overflow-hidden">
                 <p className="text-slate-400 text-xs">LinkedIn</p>
-                <p className="text-white text-sm font-medium">linkedin.com/in/karthik</p>
+                <p className="text-white text-sm font-medium break-all whitespace-normal">linkedin.com</p>
               </div>
             </a>
             
@@ -83,7 +86,7 @@ const Contact = () => {
               <div className="p-3 bg-slate-600/50 rounded-full group-hover:bg-cyan-500/20 transition-colors duration-300">
                 <MapPin className="w-5 h-5 text-cyan-400" />
               </div>
-              <div>
+              <div className="min-w-0 flex-1">
                 <p className="text-slate-400 text-xs">Location</p>
                 <p className="text-white text-sm font-medium">India</p>
               </div>

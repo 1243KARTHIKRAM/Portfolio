@@ -13,7 +13,7 @@ const About = () => {
             <div className="relative">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-cyan-400 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-shadow duration-300">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+                  src="/profile.jpg" 
                   alt="Developer portrait" 
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
@@ -43,20 +43,7 @@ const About = () => {
             </p>
             
             {/* Quick stats */}
-            <div className="grid grid-cols-3 gap-4 pt-4">
-              <div className="text-center p-4 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-cyan-400/50 hover:bg-slate-800 transition-all duration-300 group">
-                <span className="block text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent group-hover:animate-pulse">2+</span>
-                <span className="text-slate-400 text-sm">Years Exp.</span>
-              </div>
-              <div className="text-center p-4 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-cyan-400/50 hover:bg-slate-800 transition-all duration-300 group">
-                <span className="block text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent group-hover:animate-pulse">20+</span>
-                <span className="text-slate-400 text-sm">Projects</span>
-              </div>
-              <div className="text-center p-4 bg-slate-800/50 rounded-lg border border-slate-700 hover:border-cyan-400/50 hover:bg-slate-800 transition-all duration-300 group">
-                <span className="block text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent group-hover:animate-pulse">10+</span>
-                <span className="text-slate-400 text-sm">Clients</span>
-              </div>
-            </div>
+           
           </div>
         </div>
       </div>

@@ -1,5 +1,15 @@
 const skillCategories = [
   {
+    category: 'Programming Languages',
+    skills: [
+      { name: 'C', level: 85 },
+      { name: 'C++', level: 80 },
+      { name: 'Java', level: 75 },
+      { name: 'Python', level: 90 },
+    ],
+    color: 'from-blue-400 to-indigo-500'
+  },
+  {
     category: 'Frontend',
     skills: [
       { name: 'HTML', level: 95 },

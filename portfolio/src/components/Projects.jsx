@@ -4,24 +4,24 @@ import { ExternalLink, Github, Folder } from 'lucide-react';
 const featuredProjects = [
   {
     title: 'Medicine Recommendation System',
-    description: 'AI-powered system that suggests personalized medicines based on patient symptoms and medical history using machine learning algorithms.',
-    tags: ['Python', 'TensorFlow', 'Flask', 'React', 'PostgreSQL'],
-    github: 'https://github.com/medicine-recommendation',
+    description: 'AI-powered medicine recommendation system that analyzes patient symptoms and medical history to provide personalized medication suggestions.',
+    tags: ['Python', 'Machine Learning', 'HTML', 'css','Javascript', 'MongoDB'],
+    github: 'https://github.com/1243KARTHIKRAM/Medicine-Recommendation',
     demo: 'https://medicine-recommendation.demo.com',
   },
   {
-    title: 'FixBuddy Service Platform',
-    description: 'A comprehensive service marketplace connecting users with local service providers for home repairs, cleaning, and maintenance tasks.',
-    tags: ['Node.js', 'Express', 'MongoDB', 'React', 'Socket.io'],
-    github: 'https://github.com/fixbuddy',
-    demo: 'https://fixbuddy.demo.com',
+    title: 'Fix Buddy - Home Servicing Platform',
+    description: 'A comprehensive home services platform connecting users with trusted service providers for cleaning, repairs, plumbing, and more.',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT'],
+    github: 'https://github.com/1243KARTHIKRAM/Fix-buddy',
+    demo: 'https://buddy-home-services.demo.com',
   },
   {
     title: 'AI Proctored Exam System',
     description: 'Secure online examination platform with AI-based proctoring for detecting suspicious behavior and ensuring exam integrity.',
-    tags: ['Python', 'OpenCV', 'Django', 'React', 'AWS'],
-    github: 'https://github.com/ai-proctor',
-    demo: 'https://ai-proctor.demo.com',
+    tags: ['React','Node.js','MongoDB','Express','JWT'],
+    github: 'https://github.com/1243KARTHIKRAM/Exam',
+    demo: 'https://examportal-silk.vercel.app/',
   },
 ];
 
@@ -29,28 +29,31 @@ const moreProjects = [
   {
     title: 'Weather App',
     description: 'Real-time weather application with location-based forecasts, interactive maps, and severe weather alerts.',
-    github: 'https://github.com/weather-app',
+    github: 'https://github.com/1243KARTHIKRAM/weather_application-app',
+    demo: 'https://weather-application-ten-self.vercel.app/',
+  },
+    {
+  title: 'Rag System',
+  description: 'An AI-powered Retrieval-Augmented Generation system that fetches relevant knowledge from documents and generates accurate contextual responses using LLMs.',
+  github: 'https://github.com/1243KARTHIKRAM/RAG-System'
+  },
+  {
+  title: 'Job Portal',
+  description: 'A full-stack job portal platform where recruiters can post jobs and candidates can search, apply, and track applications with secure authentication.',
+  github: 'https://github.com/1243KARTHIKRAM/Job-portal',
+  demo:'https://jobportal-five-rho.vercel.app/'
   },
   {
     title: 'Kodbank',
     description: 'A code snippet manager for storing, organizing, and sharing code snippets across multiple programming languages.',
-    github: 'https://github.com/kodbank',
+    github: 'https://github.com/1243KARTHIKRAM/Banking-system',
   },
   {
-    title: 'Netflix Clone',
-    description: 'Full-stack streaming platform clone with movie browsing, recommendations, and user authentication.',
+    title: 'Netflix',
+    description: 'Full-stack streaming platform clone with movie browsing, and user authentication.',
     github: 'https://github.com/netflix-clone',
-  },
-  {
-    title: 'Chat App',
-    description: 'Real-time messaging application with group chats, file sharing, and online status indicators.',
-    github: 'https://github.com/chat-app',
-  },
-  {
-    title: 'Task Manager',
-    description: 'Productivity tool for managing tasks, deadlines, and team collaboration with kanban board views.',
-    github: 'https://github.com/task-manager',
-  },
+  }
+ 
 ];
 
 const Projects = () => {
@@ -152,15 +155,30 @@ const Projects = () => {
                 >
                   <h4 className="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors duration-300">{project.title}</h4>
                   <p className="text-slate-400 text-sm mb-3 line-clamp-2 group-hover:text-slate-300 transition-colors duration-300">{project.description}</p>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center text-slate-400 hover:text-cyan-400 transition-all duration-300 text-sm font-medium group/btn"
-                  >
-                    <Github className="w-4 h-4 mr-2 group-hover/btn:rotate-12 transition-transform duration-300" />
-                    GitHub
-                  </a>
+                  <div className="flex space-x-4 mt-auto pt-3 border-t border-slate-700/50">
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center text-slate-400 hover:text-cyan-400 transition-all duration-300 text-sm font-medium group/btn"
+                      >
+                        <Github className="w-4 h-4 mr-2 group-hover/btn:rotate-12 transition-transform duration-300" />
+                        GitHub
+                      </a>
+                    )}
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center text-slate-400 hover:text-cyan-400 transition-all duration-300 text-sm font-medium group/btn"
+                      >
+                        <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-300" />
+                        Demo
+                      </a>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>

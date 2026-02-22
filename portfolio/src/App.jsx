@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
+import GitHubStats from './components/GitHubStats';
 import Footer from './components/Footer';
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <GitHubStats />
         <Resume />
         <Contact />
       </main>
